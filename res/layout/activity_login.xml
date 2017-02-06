@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1EFFC"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/light_gray"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/loginBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:src="@drawable/jjl_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="登    录"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize18sp" />
+    </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简剪乐"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:textSize="30.0dp" />
+
+            <EditText
+                android:id="@+id/loginUsername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:drawableLeft="@drawable/jjl_user"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="店名"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="18.0dp" />
+
+            <EditText
+                android:id="@+id/loginPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:drawableLeft="@drawable/jjl_pwd"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="18.0dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10dip"
+                android:orientation="horizontal" >
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/loginCmdBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_margin="20dip"
+                android:background="@drawable/gjj_normal_btn"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16.0sp" />
+ 
+        </LinearLayout>
+
+</LinearLayout>

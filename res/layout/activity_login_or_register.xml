@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".LoginActivity" >
+ 	
+   <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/jjl_icon"
+             />
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/back_logo" />
+
+    </LinearLayout>
+    
+   <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            
+	        <Button
+	            android:id="@+id/registerBtn"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="120dp"
+		        android:layout_marginRight="120dp"
+		        android:layout_marginTop="20dp"
+	            android:background="@drawable/gjj_normal_btn"
+	            android:gravity="center_horizontal"
+	            android:padding="10dip"
+	            android:text="注册"
+	            android:textColor="@color/white"
+	            android:textStyle="bold"
+	            android:textSize="@dimen/login_btn_txt" />
+	
+	        <Button
+	            android:id="@+id/loginBtn"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="120dp"
+		        android:layout_marginRight="120dp"
+		        android:layout_marginTop="20dp"
+	            android:background="@drawable/gjj_normal_btn"
+	            android:padding="10dip"
+	            android:text="登录"
+	            android:textColor="@color/white"
+	            android:textStyle="bold"
+	            android:textSize="@dimen/login_btn_txt" />
+        </LinearLayout>
+        
+ 
+
+</LinearLayout>

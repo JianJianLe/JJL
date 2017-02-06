@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1EFFC"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/light_gray"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/disclaimerBackImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:clickable="true"
+            android:src="@drawable/jjl_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="免责声明"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize18sp" />
+    </FrameLayout>
+    <TextView 
+        android:id="@+id/disclaimContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="@string/disclaimer_content"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="5sp"
+        />
+
+</LinearLayout>
